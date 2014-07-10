@@ -1,4 +1,4 @@
 nz_mps
 ======
 
-Django REST API for NZ MPs
+Flask REST API for NZ MPs
