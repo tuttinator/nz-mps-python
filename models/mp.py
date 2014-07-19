@@ -31,6 +31,17 @@ class MP(Base):
     def image_from_src(self, src):
         self.image_url = self._base_url + src
 
+    def as_json(self):
+        return {
+                'id': self.id,
+                'first_name': self.first_name,
+                'last_name': self.last_name,
+                'party': self.party,
+                'list_mp': self.list_mp,
+                'details_url': self.details_url,
+                'image_url': self.image_url
+                }
+
     """ Parses 'List' as a List MP """
     def _parse_electorate(self):
         if self.electorate == 'List':
