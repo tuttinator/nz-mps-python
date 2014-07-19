@@ -19,9 +19,8 @@ pip install -r requirements.txt
 From the python interpreter:
 
 ``
-from database import init_db
-
-init_db()
+  from database import init_db
+  init_db()
 ``
 
 ### Scrape the data
