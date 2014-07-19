@@ -23,10 +23,10 @@ class MP(Base):
         self._parse_electorate()
 
     def __repr__(self):
-        return('<MP %s>' % self.title())
+        return('<MP %s>' % self._formatted_title())
 
-    def title(self):
-        return('%s %s, %s' % (self.first_name, self.last_name, self.party))
+    def _formatted_title(self):
+        return("id=%i first_name='%s' last_name='%s' party='%s'" % (self.id, self.first_name, self.last_name, self.party))
 
     def image_from_src(self, src):
         self.image_url = self._base_url + src
