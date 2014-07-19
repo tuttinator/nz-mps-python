@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from mp import MP
+from models.mp import MP
 
 # Get the HTML of all the Current MPs
 result = requests.get('http://www.parliament.nz/en-nz/mpp/mps/current?Criteria.ViewAll=1')
