@@ -18,9 +18,8 @@ pip install -r requirements.txt
 
 From the python interpreter:
 
-``python
-
-import database
+``
+from database import init_db
 init_db()
 ``
 
