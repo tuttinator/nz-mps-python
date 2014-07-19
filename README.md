@@ -10,30 +10,30 @@ using cron), and the simple web app.
 
 Install dependencies:
 
-``
-pip install -r requirements.txt
-``
+```
+  $ pip install -r requirements.txt
+```
 
 ### Setup up the database:
 
 From the python interpreter:
 
-``
+```python
   from database import init_db
   init_db()
-``
+```
 
 ### Scrape the data
 
-``
-python scraper.py
-``
+```
+  $ python scraper.py
+```
 
 ## Running the Flask app
 
-``
-python nz_mps.py
-``
+```
+  $ python nz_mps.py
+```
 
 ## Testing
 
@@ -48,9 +48,9 @@ WIP
 If you'd like to help improve this project, clone the project with Git
 by running:
 
-``
-$ git clone git@github.com:tuttinator/nz_mps.git
-``
+```
+  $ git clone git@github.com:tuttinator/nz_mps.git
+```
 
 Work your magic and then submit a pull request.
 
